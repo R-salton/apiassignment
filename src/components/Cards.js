@@ -38,16 +38,17 @@ useEffect(() => {
 
 
 
-// console.log(data);
+;
 
-  return (<>
+  return (
+  <>
 
-<Link to="/search">
-  
-          <Button size="sm" className="!absolute right-1 top-1 rounded" type='submit'>
-            Search
-          </Button>
-</Link>
+            <Link to="/search">
+              
+                      <Button size="sm" className="!absolute right-1 top-1 rounded" type='submit'>
+                        Search
+                      </Button>
+            </Link>
      
         
           
@@ -59,7 +60,7 @@ useEffect(() => {
        
 
        
-    <Card key={data.id} className="w-[400px] h-[300px] max-w-[48rem] flex-row">
+    <Card key={data.id} className="w-[350px] h-[300px] max-w-[48rem] flex-row sm:mx-auto">
       <CardHeader
         shadow={false}
         floated={false}
@@ -97,7 +98,7 @@ useEffect(() => {
 
 const MainContent =styled.div`
 
-width: 100vw;
+width: calc(100% - 100px);
 
 display: grid;
   
@@ -107,9 +108,9 @@ gap: 2rem;
 padding: 45px 45px 20px 45px;
 background-color: rgba(0,0,0,0.2);
 
-@media(max-width: 768px){
+@media(max-width: 968px){
   grid-template-columns: repeat(1, 1fr);
-  margin-left:60px;
+ 
 }
 
 `;

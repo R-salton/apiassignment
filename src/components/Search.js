@@ -57,7 +57,7 @@ useEffect(()=>{
     <div>
     <Link to="/">
   
-  <Button size="sm" className="!absolute right-1 top-1 rounded" type='submit'>
+  <Button size="sm" className="!absolute left-1 top-1 rounded ">
     Home
   </Button>
 </Link>
@@ -85,7 +85,7 @@ useEffect(()=>{
 {beerInfo ? 
 <>
 
-    <Alert color="green" className='w-[30rem] mx-auto'>We Got Your favorite Beer!...</Alert>
+    <Alert color="green" className='w-[30rem] mx-auto sm:w-[600px]'>We Got Your favorite Beer!...</Alert>
     <Card className="w-full max-w-[48rem] flex-row">
       <CardHeader
         shadow={false}
