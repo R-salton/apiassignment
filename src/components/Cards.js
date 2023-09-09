@@ -81,10 +81,7 @@ useEffect(() => {
         <Typography color="gray" className="mb-8 font-normal text-xs">
          {data.description}
         </Typography>
-        <a href="#" className="inline-block">
-          
-             
-        </a>
+       
       </CardBody>
     </Card>
        
